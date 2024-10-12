@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-contain{
+    height: 100vh;
+    width: 100%;
+    background-color: blueviolet;
+}
+.page {
+    /* display: flex; */
+  position: absolute;
+  top:30px;
+  left: 30px;
+  width: 95%;
+  height: 90vh;  
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(155, 195, 233);
+}
+h2{
+    font-size:30px ;
+    padding: 20px;
+}
+.turn-page1{
+    position: absolute;
+    height: 20px;
+    bottom: 60px;
+    left: 30%;
+    transition:0.5s border,background-color;
+}
+.turn-page1:hover{
+    border: solid 1.5px rgb(24, 214, 43);
+    background-color: rgb(144, 112, 112);   
+}
+a{
+    text-decoration: none;
+}
+/* -------contact------ */
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+.social-icon{
+  margin-top: 30px;
+  display: flex;
+
+}
+.social-icon a{
+    text-decoration: none;
+      font-size: 30px;
+      margin-right: 15px;
+      color: #ababab;
+    transition: transform 0.5s;
+}
+.social-icon a img{
+    height: 50px;
+    width: 50px;
+}
+.social-icon a img:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+
+}
+
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 40px;
+}
+/* ------samall---- */
+@media only screen and (max-width:600px){
+    .page{
+        background-color: aquamarine;
+         height:80vh;
+        width: 320px;
+        left: 10px;
+        right:25px;
+    } 
+    .copyright{
+        margin-top:60px ;
+    } 
+    p{
+        font-size: 20px;
+    }
+    .turn-page1{
+       
+        width: 100px;
+        height: 40px;
+       
+    }
+
+@media only screen and (width:425px){
+      .page{
+        background-color: aquamarine;
+          height:80vh;
+        width: 370px;
+        left: 10px;
+        right:25px;
+    }  
+}
+    
+}

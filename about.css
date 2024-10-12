@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    height: 100vh;
+    width: 100%;
+}
+.page {
+    display: flex;
+  position: absolute;
+  top:30px;
+  left: 30px;
+  width: 95%;
+  height: 90vh;  
+  /* text-align: center;
+  justify-content: center; */
+  background-color: rgb(126, 181, 232);
+}
+.page-content{
+    height:40vh ;
+    width: 47%;
+    /* background-color: rgba(43, 226, 141, 0.652); */
+    position: absolute;
+    top: 110px;
+}
+.page-back{
+    position: absolute;
+    right: 15%;
+    top:20%;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    transform:skewX(50deg) ;
+    /* z-index: 0; */
+}
+img{
+    position: absolute;
+    top: 15%;
+    right: 12%;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border:solid 5px rgba(211, 9, 9, 0.821);
+}
+h2{
+    margin-left: 170px;
+    padding: 20px;
+}
+p{
+    font-size:20px ;
+    padding-top: 10px;padding-left: 10px;
+}
+a{
+   
+    text-decoration: none;
+}
+.turn-page{
+    position: absolute;
+    height: 20px;
+    bottom: 60px;
+    right: 20%;
+    transition:0.5s border,background-color;
+}
+.turn-page:hover{
+    /* color: antiquewhite; */
+    border: solid 1px red;
+    background-color: rgb(28, 26, 26);
+}
+.turn-page1{
+    position: absolute;
+    height: 20px;
+    bottom: 60px;
+    left: 30%;
+    
+    transition:0.5s border,background-color;
+
+}
+.turn-page1:hover{
+    border: solid 1.5px rgb(24, 214, 43);
+    background-color: rgb(144, 112, 112);   
+}
+span{
+    color: rgb(203, 16, 16);
+}
+/* ------small--- */
+@media only screen and (max-width:600px){
+    .main-container{
+        height: 160vh;
+        width: 150%;
+    }
+    .page{
+        /* background-color: aquamarine; */
+        height:550px;
+        width: 400px;
+        left: 12px;
+        right:25px;
+    } 
+    .page-back{
+        left: 30%;
+        top:45%;
+        height: 180px;
+        width: 180px;
+        background-color: aqua;
+        transform:skewX(50deg) ;
+        /* z-index: 0; */
+    }
+    img{
+        position: absolute;
+        top: 41%;
+        left: 23%;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        border:solid 5px rgba(211, 9, 9, 0.821);
+    }
+    .page-content{
+        top:4%;
+        left: 20%;
+        height:40vh ;
+        width: 60%;
+      
+    } 
+    h2{
+        margin-left: 30px;
+        padding: 20px;
+    }
+    .turn-page1{
+       
+        width: 100px;
+        height: 40px;
+         bottom: 20px;
+        left:15%;
+        
+       
+    }
+    .turn-page{
+        width: 100px;
+        height: 40px; 
+         bottom: 20px;
+         right: 15%;
+    }
+
+}
